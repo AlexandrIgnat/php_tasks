@@ -1,14 +1,12 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     
     let form = document.getElementById('form');
     let inputDisplay = document.getElementById('display-currency__value');
 
-    
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         let formData = new FormData(form);
-        let response = await fetch('/taskTwoAJAX/handler.php', {
+        let response = await fetch('/task_two_ajax/rates.php', {
             method: "POST",
             body: formData,
         });

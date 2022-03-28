@@ -35,7 +35,7 @@ if ($_POST['currency'] && $_POST['amount']) {
 <body>
     <section class="main">
         <div class="main_block">
-            <form action="/taskTwo/index.php" method="post" class="form">
+            <form action="/task_two/index.php" method="post" class="form">
                 <label>
                     Количество:
                     <input type="number" name="amount" value="<?php echo $_POST['amount'] ? $_POST['amount'] : 0?>">

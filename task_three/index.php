@@ -24,7 +24,7 @@ INNER JOIN country_description ON country.country_id = country_description.count
 where product.status = 1 
 and product.product_id > 5 && product.product_id < 11 
 and product_description.language_id = 1
-ORDER BY product.product_id DESC"; // формируем запрос для бд
+ORDER BY product.product_id ASC"; // формируем запрос для бд
 
 $statement = $pdo->prepare($sql); // передаем значения в pdo
 $statement->execute();
